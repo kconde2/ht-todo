@@ -18,3 +18,8 @@ set -e
 
 
 # Put Custom Ad-hoc scripts below:
+
+php artisan key:generate
+php artisan config:cache
+php artisan cache:clear
+php artisan ide-helper:generate

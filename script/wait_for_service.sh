@@ -11,3 +11,5 @@ while ! (docker compose logs web |grep -o "Started Nginx") ; do
 done
 
 echo "Nginx & app are now ready 🔥"
+
+echo "Todo app url: http://localhost:8083"

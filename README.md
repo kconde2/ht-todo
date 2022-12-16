@@ -1,12 +1,26 @@
 ## Run project
 
+- (**Recommanded for the first time run**) Build docker images and run init setup
+
+```
+make build-up
+```
+
+- Stop all containers
+
+```
+make down
+```
+
+- Start all containers
+
 ```
 make up
 ```
 
 You can run `make` command to see other available commands.
 
-[http://localhost:8083](http://localhost:8083)
+Todo app url [http://localhost:8083](http://localhost:8083)
 
 ## Tests
 
@@ -25,4 +39,3 @@ make tests
 
 - https://github.com/sherifabdlnaby/kubephp
 - https://laravel.com/docs/9.x/http-client
-- https://laravel-livewire.com/docs

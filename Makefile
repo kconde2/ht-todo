@@ -16,6 +16,8 @@ wait: ## wait project containers
 
 deploy:			## Start using Prod Image in Prod Mode
 	${COMPOSE_PREFIX_CMD} docker-compose -f docker-compose.prod.yml up --build -d
+init:			## Start using Prod Image in Prod Mode
+	cp todo/.env.example todo/.env
 
 up:				## Start service
 	@echo "Starting Application \n (note: Web container will wait App container to start before starting)"
@@ -23,6 +25,7 @@ up:				## Start service
 	make wait
 
 build-up:       ## Start service, rebuild if necessary
+	make init
 	${COMPOSE_PREFIX_CMD} docker-compose up --build -d
 	make wait
 

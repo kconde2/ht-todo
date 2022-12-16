@@ -8,8 +8,3 @@ composer install
 
 echo "► Checking Platform Requirements"
 composer check-platform-reqs
-
-php artisan config:cache
-php artisan cache:clear
-
-php artisan ide-helper:generate
