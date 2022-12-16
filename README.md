@@ -5,10 +5,11 @@ laravel framework. You will need to communicate with AWS API to handle this todo
 
 ## 2 Requirements to run the project
 
-1. Make sure to have at least docker version `>= 20.10.21`
+1. Make sure to have at least docker version `>= 20.10.21` with compose plugin
 
 ```
 docker --version
+docker compose --version
 ```
 
 2. Have `make` command installed
